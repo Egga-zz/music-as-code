@@ -18,7 +18,7 @@ public class NoteTest {
 
     @Test
     public void aShouldHaveThePitchSix() {
-        assertThat(Note.A.getPitch(), is(equalTo(10)));
+        assertThat(Note.A.getBasePitch(), is(equalTo(10)));
     }
 
     @Test

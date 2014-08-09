@@ -16,24 +16,22 @@ public enum Note {
     GSharp("G#/Ab", 9),
     A("A", 10),
     ASharp("A#/Bb", 11),
-    B("B", 12),
-
-    Octave("Octave", 1);
+    B("B", 12);
 
     private String name;
 
-    private int pitch;
+    private int basePitch;
 
-    Note(final String name, final int pitch) {
+    Note(final String name, final int basePitch) {
         this.name = name;
-        this.pitch = pitch;
+        this.basePitch = basePitch;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getPitch() {
-        return pitch;
+    public int getBasePitch() {
+        return basePitch;
     }
 }

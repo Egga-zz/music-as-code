@@ -1,7 +1,5 @@
 package de.egga;
 
-import java.math.BigInteger;
-
 /**
  * @author egga
  */
@@ -9,14 +7,16 @@ public class PlayableNote {
 
     private Note note;
 
-    private BigInteger octave;
+    private int octave;
 
-    public PlayableNote(Note note, BigInteger octave) {
+    public PlayableNote(Note note, int octave) {
         this.note = note;
         this.octave = octave;
     }
 
-    public void play(){
-
+    public int getPitch(){
+        //A: basePitch = 10
+        //A: octavePitch = 10 + (12 * octave)
+        return note.getBasePitch() + Note.values().length * octave;
     }
 }
