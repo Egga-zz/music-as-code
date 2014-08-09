@@ -24,5 +24,5 @@ public class NoteTest {
     @Test
     public void thereAreTwelveNotes() {
         assertThat(Note.values().length, equalTo(12));
-    }
+}
 }
