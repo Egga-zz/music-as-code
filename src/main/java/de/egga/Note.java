@@ -16,12 +16,13 @@ public enum Note {
     GSharp("G#/Ab", 9),
     A("A", 10),
     ASharp("A#/Bb", 11),
-    B("B", 12);
+    B("B", 12),
+
+    Octave("Octave", 1);
 
     private String name;
 
     private int pitch;
-
 
     Note(final String name, final int pitch) {
         this.name = name;
