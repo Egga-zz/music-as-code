@@ -21,4 +21,8 @@ public class NoteTest {
         assertThat(Note.A.getPitch(), is(equalTo(10)));
     }
 
+    @Test
+    public void thereAreTwelveNotes() {
+        assertThat(Note.values().length, equalTo(12));
+    }
 }
