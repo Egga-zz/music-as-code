@@ -13,11 +13,12 @@ public class NoteTest {
 
     @Test
     public void aShouldHaveTheNameLa() {
-        assertThat(Note.A.getName(), is(equalTo("La")));
+        assertThat(Note.A.getName(), is(equalTo("A")));
     }
 
     @Test
     public void aShouldHaveThePitchSix() {
-        assertThat(Note.A.getPitch(), is(equalTo(6)));
+        assertThat(Note.A.getPitch(), is(equalTo(10)));
     }
+
 }
